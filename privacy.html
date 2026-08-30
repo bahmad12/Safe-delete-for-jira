@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy — Safe Delete for Jira</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, -apple-system, sans-serif; max-width: 720px;
+           margin: 0 auto; padding: 2rem 1.25rem; line-height: 1.6; }
+    footer { margin-top: 3rem; font-size: .9rem; opacity: .7; }
+  </style>
+</head>
+<body>
+  <h1>Privacy policy</h1>
+  <p><em>Safe Delete for Jira, published by {{VENDOR_NAME}}. Last updated: {{DATE}}.</em></p>
+
+  <h2>The short version</h2>
+  <p>Your data never leaves Atlassian. Safe Delete is a Forge app that runs
+  entirely on Atlassian-hosted compute and storage ("Runs on Atlassian"),
+  makes no network calls to any non-Atlassian service, and includes no
+  analytics or tracking of any kind — in the app or on this site.</p>
+
+  <h2>What the app processes</h2>
+  <p>To build its reference reports, the app reads your Jira site's
+  <strong>configuration metadata</strong> via read-only Jira APIs: names and
+  identifiers of permission schemes, notification schemes, issue security
+  levels, saved filters, dashboards, boards, workflows, priority schemes,
+  projects and project roles, and the groups, statuses, and priorities they
+  reference.</p>
+
+  <h2>What the app stores</h2>
+  <p>The reference index derived from that metadata, plus scan bookkeeping
+  (timestamps, progress counters), in Forge app storage inside your own
+  Atlassian site context. Only the most recent completed scan and any
+  in-progress scan are kept; older scans are deleted automatically.</p>
+
+  <h2>What the app never touches</h2>
+  <ul>
+    <li>Issue content, comments, or attachments (beyond an aggregate issue
+        <em>count</em> for a selected status/priority).</li>
+    <li>Personal data beyond group names, which Jira already displays to
+        every administrator.</li>
+    <li>Credentials or tokens — authentication is handled by the Forge platform.</li>
+  </ul>
+  <p>The automation rule analyzer runs entirely in your browser: rule exports
+  you paste are analyzed locally and are never transmitted or stored.</p>
+
+  <h2>Data sharing and subprocessors</h2>
+  <p>None. There are no third-party services, analytics providers, or
+  subprocessors. Hosting and data residency are Atlassian's, per the Forge
+  platform.</p>
+
+  <h2>Data deletion</h2>
+  <p>Uninstalling the app removes its Forge storage per Atlassian platform
+  behavior. You can also simply run no further scans; stored data is
+  configuration metadata only.</p>
+
+  <h2>Contact</h2>
+  <p>Privacy questions: <a href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a>.</p>
+
+  <footer><a href="index.html">Safe Delete for Jira</a> · <a href="support.html">Support</a></footer>
+</body>
+</html>

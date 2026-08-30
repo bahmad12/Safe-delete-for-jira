@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Safe Delete for Jira</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, -apple-system, sans-serif; max-width: 720px;
+           margin: 0 auto; padding: 2rem 1.25rem; line-height: 1.6; }
+    header { text-align: center; margin-bottom: 2rem; }
+    .mark { width: 96px; height: 96px; border-radius: 20px; background: #0C2D48;
+            display: inline-grid; place-items: center; }
+    .tag { font-size: 1.2rem; opacity: .85; }
+    nav a { margin: 0 .75rem; }
+    footer { margin-top: 3rem; font-size: .9rem; opacity: .7; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 512 512" width="72" height="72">
+        <circle cx="256" cy="256" r="180" fill="none" stroke="#2E86AB" stroke-width="16" opacity="0.45"/>
+        <circle cx="256" cy="256" r="130" fill="none" stroke="#2E86AB" stroke-width="16" opacity="0.7"/>
+        <circle cx="256" cy="256" r="80" fill="#2E86AB"/>
+        <path d="M218 256 l30 32 l52 -62" fill="none" stroke="#fff" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h1>Safe Delete for Jira</h1>
+    <p class="tag">Find every place a group, status, or priority is used — before you delete it.</p>
+    <nav><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
+  </header>
+
+  <p>Jira's 2026 data limits mean admins have to delete configuration — and
+  deleting blind breaks filters, boards, and workflows nobody remembers
+  building. Safe Delete scans your instance on a schedule, precomputes where
+  every group, status, and priority is referenced, and gives you a strict
+  <strong>SAFE / CAUTION / UNSAFE</strong> verdict with evidence and deep
+  links into Jira admin.</p>
+
+  <p><strong>Honest by design:</strong> Jira Cloud offers no API to read
+  automation rules, so no scanner can see inside them. Instead of pretending,
+  Safe Delete caps verdicts at CAUTION and gives you a browser-side paste
+  analyzer for exported rules — nothing you paste is stored or transmitted.</p>
+
+  <p><strong>Runs on Atlassian:</strong> Forge compute and storage only. Zero
+  external egress, no analytics, no trackers. This page has none either.</p>
+
+  <footer>© {{VENDOR_NAME}} · <a href="privacy.html">Privacy policy</a> ·
+  <a href="support.html">Support</a></footer>
+</body>
+</html>
