@@ -4,7 +4,7 @@ Privacy policy, support page, and landing page for the
 [Safe Delete for Jira](https://github.com/bahmad12/blast-radius-for-jira) app
 (served via GitHub Pages).
 
-Before Marketplace submission, replace the `jira-tools`,
+Before Marketplace submission, replace the `Admin Toolsmith`,
 `bahmad@hotmail.com`, and `2026-08-30` placeholders, then enable Pages:
 Settings → Pages → Deploy from branch → main / root.
 
